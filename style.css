@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+    --color: hsl(228, 45%, 44%);
+    
+}
+
+body {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    background: var(--Light-gray);
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: block;
+    width: 400px;
+    background: var(--White);
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.card img {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+}
+
+.card h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--Dark-blue);
+}
+
+.card p {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+    color: var(--Grayish-blue);
+}
+
+    
+@media(max-width: 375px){
+    .card h1 {
+        font-size: 25px;
+    }
+    .card p {
+        font-size: 17px;     
+    }
+} 
+    
+
+
+
+
+/*
+    ## Layout
+
+    The designs were created to the following widths:
+    
+    - Mobile: 375px
+    - Desktop: 1440px
+    
+      
+    - Font size (paragraph): 15px
+    
+    ### Font
+    
+    - Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+
+    - Weights: 400, 700
+
+*/
